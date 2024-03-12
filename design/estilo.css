@@ -1,0 +1,433 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+
+header{
+    width: 100%;
+    background-color: white;
+   
+    box-shadow: 1px 1px 4px black;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar{
+    max-width: 1200px;
+  
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+div.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+   
+}
+
+ul{
+    list-style: none;
+    
+}
+ul#itens{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+a{
+    
+    text-decoration: none;
+    margin-right: 10px;
+    
+}
+
+button.login{
+    height: 30px;
+    border-radius: 10px;
+    width: 80px;
+    color: white;
+    background: green;
+    outline: none;
+    border: none;
+    transition: 0.5s ease;
+}
+button.login:hover{
+    background-color: rgb(11, 79, 11);
+}
+
+
+.hamburguer i{
+    color: #000000;
+    font-size: 30px;
+    display: none;
+}
+
+@media (max-width:800px) {
+
+  .hamburguer i{
+       
+        display: block;
+    }
+
+.hamburguer {
+   display: block;
+   z-index: 1;
+  
+   
+  
+
+}
+
+ul#itens{
+    display: none;
+    z-index:-1;
+    position: fixed;
+
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    height: 100vh;
+   
+    width: 100%;
+    max-width: 250px;
+    padding: 100px 20px;
+   
+    
+    
+}
+#itens li{
+    margin-top: 15px;
+    text-align: center;
+    
+  }
+}
+
+
+
+
+/*Hero*/
+.hero{
+  background:linear-gradient(to top, rgba(0, 0, 0, 0.749)50%,rgba(0, 0, 0, 0.749)50%),url(../img/foto-do-pessoal.jpg) ;
+    background-size: cover;
+    background-position: center bottom;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero h1{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+  }
+  .hero h2{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+  }
+  .hero .btn {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #191c03;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  
+  
+  @media(max-width:700px){
+    .hero h1{
+      font-size: 2rem;
+      margin-top: 70px;
+     
+    }
+    .hero{
+      background-position: center center;
+    height: 90vh;
+
+    }
+   .hero h3{
+      font-size: 1rem;
+    }
+   
+  }
+
+  /*Hero fecho*/
+
+
+
+  /*Conhença o hotel */
+
+.conheca-o-hotel{
+    font-size: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+  }
+  .conheca-o-hotel h3{
+  
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #191c03;
+    text-align: center;
+  }
+  .conheca-o-hotel p{
+  
+   max-width: 800px;
+    margin-bottom: 35px;
+    color: #191c03;
+    text-align: center;
+    
+  }
+  .conheca-o-hotel hr{
+  
+   width: 200px;
+   height: 2px;
+   background-color: #191c03;
+    margin-bottom: 70px;
+    border: none;
+    
+  }
+  
+  .conheca-o-hotel .grid{
+  
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+     
+   }
+  
+   .conheca-o-hotel .grid li{
+  height: 350px;
+   padding: 20px;
+  
+   border-radius: 4px;
+   background-clip: content-box;  
+   background-size: cover;
+   
+   }
+  
+   .conheca-o-hotel .grid .small{
+    flex-basis: 40%;
+   }
+   .conheca-o-hotel .grid .large{
+    flex-basis: 60%;
+   }
+  
+   @media(max-width:700px){
+    .conheca-o-hotel .grid .small, .conheca-o-hotel .grid .large{
+      flex-basis: 100%;
+    }
+   }
+
+  /*Conhença o hotel fecho*/
+
+
+   /*Caracteristicas*/
+ 
+
+
+ .caracteristica{
+  background-color: #191c03;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+}
+.caracteristica h3{
+
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #fff;
+  text-align: center;
+}
+.caracteristica p{
+
+ max-width: 800px;
+  margin-bottom: 35px;
+  color: #fff;
+  text-align: center;
+  
+}
+.caracteristica hr{
+
+ width: 200px;
+ height: 2px;
+ background-color: #fff;
+  margin-bottom: 70px;
+  border: none;
+  
+}
+
+.caracteristica .grid{
+  width: 100%;
+  display: flex;
+ 
+ 
+ 
+  }
+
+ .caracteristica .grid li {
+ padding: 0 20px;
+ text-align: center;
+ 
+
+  }
+  .caracteristica .grid li i{
+    color: #c3c63b;
+    font-size: 50px;
+    margin-bottom: 30px;
+     }
+
+     .caracteristica .grid li h4{
+      font-size: 1.5rem;
+      color: #c3c63b;
+      margin-bottom: 30px;
+       }
+       .caracteristica .grid li p{
+       
+        color: #fff;
+       
+         }
+           @media(max-width:850px){
+            .caracteristica .grid {
+              flex-direction: column;
+            }
+           }
+  
+
+ /*Caracteristicas*/
+
+ /*Footer*/
+footer{
+  line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+.container{
+  max-width: 1170px;
+  
+  margin: auto;
+}
+.linhas{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer{
+ background-color: #242805;
+padding: 70px;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  
+}
+.footer-col h4::before{
+  content:'' ;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+  
+  
+}
+.footer-col ul li:not(:last-child)
+{margin-bottom: 10px;
+
+}
+.footer-col ul li a{
+font-size: 16px;
+color: #ffffff;
+text-decoration: none;
+font-weight: 300;
+color: #bbbbbb;
+display: block;
+transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+color: #ffffff;
+padding-left: 8px;
+
+
+}
+
+
+.footer-col.redesSosiais a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 2555, 0.2);
+margin:0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.5s ease;
+
+
+}
+/*
+.footer-col.redesSosiais a:hover{
+  color: #24262b;
+ 
+  background-color: #ffffff;
+  
+  
+  }
+*/
+@media(max-width: 767px){
+  .footer-col{
+      width: 50%;
+      padding: 0 15px;
+      margin-bottom: 30px;
+
+  }
+}
+
+@media(max-width: 574px){
+  .footer-col{
+      width: 100%;
+      
+      margin-bottom: 30px;
+
+  }
+}
+
+.footer-col i{
+  font-size: 30px;
+  color: white;
+
+}
+footer a i:hover{
+  border-radius: 50%;
+  color: #ffffff96;
+}
+ /*Footer fecho*/
+
